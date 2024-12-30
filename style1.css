@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    scroll-behavior: smooth;
+}
+
+/* Contact Section */
+.iconget {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.contactsecmain {
+    width: 100%;
+    background: rgba(10, 10, 218, 0.1);
+    padding: 20px; 
+}
+
+.hcp {
+    font-size: 45px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contactsec {
+    /* margin: 0 auto; Centering the container */
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; /* Added gap for spacing */
+    padding: 30px; /* Added padding */
+}
+
+.emailcon {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 8px;
+}
+
+.contactone {
+    padding: 10px;
+}
+
+.op {
+    margin-bottom: 25px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.contacttwo {}
+
+.ctone {
+    width: 90%;
+}
+
+.inp, .txtar {
+    width: 100%; /* Full width */
+    max-width: 600px; /* Max width for larger screens */
+    padding-left: 10px;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+}
+
+.inp {
+    height: 40px;
+}
+
+.txtar {
+    height: 200px;
+    padding-top: 10px;
+    resize: none;
+}
+
+.resbtn {
+    width: 150px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1.25rem;
+    background: rgba(48, 48, 236, 0.9);
+    border: 0;
+    color: white;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .contactsec {
+        grid-template-columns: 1fr; /* Single column layout */
+        margin: 20px; /* Adjusted margin */
+    }
+
+    .hcp {
+        font-size: 36px; /* Adjusted font size */
+    }
+
+    .inp, .txtar {
+        width: 100%; /* Full width on smaller screens */
+        max-width: 100%; /* Remove max-width constraint */
+    }
+
+    .resbtn {
+        width: 100%; /* Full width button */
+    }
+}
+
+@media (max-width: 480px) {
+    .hcp {
+        font-size: 30px; /* Further adjust for very small screens */
+    }
+
+    .op {
+        font-size: 16px; /* Smaller font size */
+        text-align: justify;
+    }
+
+    
+}
+
+@media (max-width: 430px) {
+    .hcp {
+        font-size: 30px; /* Further adjust for very small screens */
+    }
+
+    .op {
+        font-size: 16px; /* Smaller font size */
+        text-align: justify;
+    }
+
+    .emailcon{
+        font-size: 16px; 
+    }
+}
+
